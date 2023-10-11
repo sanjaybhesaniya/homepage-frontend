@@ -1,0 +1,54 @@
+    @media screen and (min-width: 768px) {
+
+        .modal-dialog {
+
+            width: 700px;
+            /* New width for default modal */
+            /* max-height: 450px; */
+            overflow-y: auto;
+        }
+
+    }
+
+    @media screen and (min-width: 544px) {
+        .modal-sm {
+
+            width: 350px;
+            /* New width for small modal */
+            max-height: auto;
+            overflow-y: auto;
+        }
+
+    }
+
+    @media screen and (min-width: 992px) {
+
+        .modal-lg {
+
+            width: 950px;
+            /* New width for large modal */
+            max-height: 600px;
+            overflow-y: auto;
+
+        }
+
+    }
+
+    .modal-dialog,
+    .modal-content {
+        /* 80% of window height */
+        height: 95%;
+    }
+
+    .modal-body {
+        /* 100% = dialog height, 120px = header + footer */
+        max-height: calc(100% - 10px);
+        overflow-y: scroll;
+    }
+
+    .modal-img{
+        max-height: calc(90%);
+        max-width:  calc(100%);
+        width:calc(100%);
+        height:calc(90%);
+    }

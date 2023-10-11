@@ -1,0 +1,36 @@
+.main {
+  max-height: calc(90%);
+}
+
+.imageGallery {
+  padding: calc(10%);
+}
+
+.imageGallery img {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  filter: grayscale(75%);
+}
+
+.imageBody {
+  width:100%;
+  height: calc(95vh - 150px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.navigationBody {
+  width:100%;
+  height: calc(95vh - 150px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.imagehover img:hover {
+  filter: none;
+  transform: scale(2.1);
+  transition: ease-in-out 0.25s;
+  position: relative;
+  z-index: 2;
+}

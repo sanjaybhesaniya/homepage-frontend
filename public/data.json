@@ -1,0 +1,56 @@
+[
+  {
+    "continent": "Asia",
+    "countries": [
+      {
+        "country": "India",
+        "travels": [
+          {
+            "travel": "Feb. 1993",
+            "path": "C:\\Bilder\\NepIndia199302"
+          },
+          {
+            "travel": "Feb. 1995",
+            "path": "C:\\Bilder\\India199502"
+          }
+        ]
+      },
+      {
+        "country": "Nepal",
+        "travels": [
+          {
+            "travel": "Feb. 1993",
+            "path": "C:\\Bilder\\NepIndia199302"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "continent": "Africa",
+    "countries": [
+      {
+        "country": "Tanzania",
+        "travels": [
+          {
+            "travel": "Feb. 1993",
+            "path": "C:\\Bilder\\Tanzania199302"
+          },
+          {
+            "travel": "Feb. 1995",
+            "path": "C:\\Bilder\\Tanzania199502"
+          }
+        ]
+      },
+      {
+        "country": "Kenya",
+        "travels": [
+          {
+            "travel": "Feb. 1993",
+            "path": "C:\\Bilder\\Tanzania199302"
+          }
+        ]
+      }
+    ]
+  }
+]

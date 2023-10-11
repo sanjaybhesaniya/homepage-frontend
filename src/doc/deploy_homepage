@@ -1,0 +1,45 @@
+1) OPEN POWERSHELL
+
+2) Change to Working directory
+
+3) npm run build                                               - um das PROD system zu bauen
+
+4) docker build -t homepage-vqui .                              -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
+4) docker build -t homepage-bsui .                              -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
+
+5) docker tag homepage-vqui volkerquillfeldt/myrepo:homepage    -aktelles Image markieren
+5) docker tag homepage-bsui bhensaniyasanjay/myrepo:homepage    -aktelles Image markieren
+
+6) docker push volkerquillfeldt/myrepo:homepage                 - image auf dockerhub schieben
+6) docker push bhensaniyasanjay/myrepo:homepage                 - image auf dockerhub schieben
+
+
+7) -------  Mit Server verbinden  -------------
+
+8) docker pull volkerquillfeldt/myrepo:homepage
+8) docker pull bhensaniyasanjay/myrepo:homepage
+
+9) docker stop react_page
+
+10) docker rm react_page
+
+11) docker run --restart always -d  -p 3000:80 --name=react_page volkerquillfeldt/myrepo:homepage
+11) docker run --restart always -d  -p 3000:80 --name=react_page bhensaniyasanjay/myrepo:homepage
+
+------------------------------------------------------------------------------------------------------
+In the Volker FE app we are using node version = 14.16.1
+node use 14.16.1                    - command to use specific node version
+nvm list                            - list all node versions
+------------------------------------------------------------------------------------------------------
+After setting node verion follow coammand below
+
+npm install
+npm strat
+npm run build               - to build FE application build file that will run on Webserver( in our case Nginx )
+
+-----------------------------------------------------------------------------------------------------
+Go to Dockerfile on its path, Run command below
+- docker compose up         - which copy folder build ( which is crated by line no 38 )
+                            - and past to nginx dir = /user/share/nginx/html
+
+

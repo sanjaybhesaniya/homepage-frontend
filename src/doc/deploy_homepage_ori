@@ -1,0 +1,22 @@
+1) OPEN POWERSHELL
+
+2) Change to Working directory
+
+n3) npm run build  - um das PROD system zu bauen
+
+4) docker build -t homepage-vqui .    -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
+
+5) docker tag homepage-vqui volkerquillfeldt/myrepo:homepage    -aktelles Image markieren
+
+6) docker push volkerquillfeldt/myrepo:homepage   - image auf dockerhub schieben
+
+7) Mit Server verbinden
+
+8) docker pull volkerquillfeldt/myrepo:homepage
+
+9)  docker stop react_page
+
+10) docker rm react_page
+
+11) docker run --restart always -d  -p 3000:80 --name=react_page volkerquillfeldt/myrepo:homepage
+
