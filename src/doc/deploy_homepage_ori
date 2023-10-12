@@ -2,13 +2,13 @@
 
 2) Change to Working directory
 
-n3) npm run build  - um das PROD system zu bauen
+n3) npm run build                                               - um das PROD system zu bauen
 
-4) docker build -t homepage-vqui .    -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
+4) docker build -t homepage-vqui .                              -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
 
 5) docker tag homepage-vqui volkerquillfeldt/myrepo:homepage    -aktelles Image markieren
 
-6) docker push volkerquillfeldt/myrepo:homepage   - image auf dockerhub schieben
+6) docker push volkerquillfeldt/myrepo:homepage                 - image auf dockerhub schieben
 
 7) Mit Server verbinden
 
