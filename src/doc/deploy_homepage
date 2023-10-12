@@ -33,7 +33,9 @@ nvm list                            - list all node versions
 ------------------------------------------------------------------------------------------------------
 After setting node verion follow coammand below
 
-npm install
+npm install  ( if you get error after this command then run below 2 command )
+    npm install popper.js --save
+    npm install @popperjs/core --save
 npm strat
 npm run build               - to build FE application build file that will run on Webserver( in our case Nginx )
 
