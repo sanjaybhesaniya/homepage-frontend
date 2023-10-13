@@ -84,7 +84,7 @@ class Header extends Component {
 							</div>
 						</div>
 						<div className="col-sm-7">
-							<h2 className="text-white">Volkers Reisebilder</h2>
+							<h2 className="text-white">Sanjay Reisebilder</h2>
 						</div>
 						<div className="col-sm-2">
 							<div className="container-fluidcontainer py-3">
