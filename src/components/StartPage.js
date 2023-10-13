@@ -16,8 +16,9 @@ class StartPage extends Component {
 
 
   componentDidMount() {
-    
-    fetch('/getStartPage')
+    // SB OLD Code
+    // fetch('/getStartPage')
+    fetch('http://localhost:8081/getStartPage')
         .then(response => response.json())
         .then((jsonData) => {
           // jsonData is parsed json object received from url

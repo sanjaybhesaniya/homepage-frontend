@@ -18,7 +18,7 @@ class Body extends Component {
 
   componentDidMount() {
     if (!this.state.isfinal && this.props.path !== '') {
-      fetch('/getRollingPictures?position=' + this.state.position + '&path='
+      fetch('http://localhost:8081/getRollingPictures?position=' + this.state.position + '&path='
           + this.props.path)
       .then(response => response.json())
       .then((jsonData) => {
@@ -60,7 +60,7 @@ class Body extends Component {
 
   componentDidUpdate(prevProps: Readonly<P>, prevState: Readonly<S>, snapshot: SS) {
     if (this.state.position !== prevState.position) {
-      fetch('/getRollingPictures?position=' + this.state.position + '&path='
+      fetch('http://localhost:8081/getRollingPictures?position=' + this.state.position + '&path='
           + this.props.path)
       .then(response => response.json())
       .then((jsonData) => {
