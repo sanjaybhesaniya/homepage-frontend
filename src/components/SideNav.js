@@ -18,8 +18,9 @@ class SideNav extends Component {
   };
 
   componentDidMount() {
-    // SB OLD
+    // prod run as below
     // fetch('/getNavigation')
+    // local run as below
     fetch('http://localhost:8081/getNavigation')
     .then(response => response.json())
     .then((jsonData) => {

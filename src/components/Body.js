@@ -18,8 +18,10 @@ class Body extends Component {
 
   componentDidMount() {
     if (!this.state.isfinal && this.props.path !== '') {
-      fetch('http://localhost:8081/getRollingPictures?position=' + this.state.position + '&path='
-          + this.props.path)
+      // prod run as below
+      //fetch('/getRollingPictures?position=' + this.state.position + '&path='+ this.props.path)
+      // local run as below
+      fetch('http://localhost:8081/getRollingPictures?position=' + this.state.position + '&path='+ this.props.path)
       .then(response => response.json())
       .then((jsonData) => {
         // jsonData is parsed json object received from url
@@ -60,8 +62,10 @@ class Body extends Component {
 
   componentDidUpdate(prevProps: Readonly<P>, prevState: Readonly<S>, snapshot: SS) {
     if (this.state.position !== prevState.position) {
-      fetch('http://localhost:8081/getRollingPictures?position=' + this.state.position + '&path='
-          + this.props.path)
+      // prod run as below
+      //fetch('/getRollingPictures?position=' + this.state.position + '&path='+ this.props.path)
+      // local run as below
+      fetch('http://localhost:8081/getRollingPictures?position=' + this.state.position + '&path='+ this.props.path)
       .then(response => response.json())
       .then((jsonData) => {
         // jsonData is parsed json object received from url
