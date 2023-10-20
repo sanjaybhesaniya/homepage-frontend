@@ -2,8 +2,8 @@ Run application locally
 
 - install Docker
 - Install nginx
-- chnage fetch code in FE (SideNav.js , line 23)  = fetch('http://localhost:8081/getNavigation')
-- chnage fetch code in FE (Start.js , line 21)
+- change fetch code in FE (SideNav.js , line 23)  = fetch('http://localhost:8081/getNavigation')
+- change fetch code in FE (Start.js , line 21)
 
 --------------------------
 
