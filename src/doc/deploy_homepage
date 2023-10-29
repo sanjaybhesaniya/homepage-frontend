@@ -11,13 +11,32 @@ Run application locally
 
 2) Change to Working directory
 
-3) npm run build                                               - um das PROD system zu bauen
+3) npm run build                                                - um das PROD system zu bauen
+
+        --- SB Step to deploy on Docker ----
+        On Terminal :
+            build and Tag : sanjay@ubuntu-server-243:~/Repository/homepage-frontend$ docker build -f Dockerfile -t sample:prod .
+            build and Tag : sanjay@ubuntu-server-243:~/Repository/homepage-frontend$ docker build -f Dockerfile -t sample .
+            Run on Docker : sanjay@ubuntu-server-243:~/Repository/homepage-frontend$ docker run -it --rm -p 3000:80 sample:prod
+
+            5) docker tag sample bhensaniyasanjay/myrepo:sample    -aktelles Image markieren
+
+            Before Push :
+            Go to terminal :  docker login -u bhensaniyasanjay
+            use password  : dckr_pat_z2DmhIrYFcXYde22kmjTMV3zG1k
+
+            6) docker push bhensaniyasanjay/myrepo:sample
+        ------------------------------------
 
 4) docker build -t homepage-vqui .                              -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
-4) docker build -t homepage-bsui .                              -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
+4) docker build -t homepage-sbui .                              -Docker image bauen .Dockerfile im  working directory daher mit . am Ende
 
 5) docker tag homepage-vqui volkerquillfeldt/myrepo:homepage    -aktelles Image markieren
-5) docker tag homepage-bsui bhensaniyasanjay/myrepo:homepage    -aktelles Image markieren
+5) docker tag homepage-sbui bhensaniyasanjay/myrepo:homepage    -aktelles Image markieren
+
+    Before Push :
+    Go to terminal :  docker login -u bhensaniyasanjay
+    use password  : dckr_pat_z2DmhIrYFcXYde22kmjTMV3zG1k
 
 6) docker push volkerquillfeldt/myrepo:homepage                 - image auf dockerhub schieben
 6) docker push bhensaniyasanjay/myrepo:homepage                 - image auf dockerhub schieben
