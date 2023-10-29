@@ -16,10 +16,10 @@ class StartPage extends Component {
 
 
   componentDidMount() {
-    // prod-run as below
-    // fetch('/getStartPage')
-    // local run as below
-    fetch('http://localhost:8081/getStartPage')
+    // main = main branch (prod branch)
+    fetch('/getStartPage')
+    // dev  = dev  branch
+    //fetch('http://localhost:8081/getStartPage')
         .then(response => response.json())
         .then((jsonData) => {
           // jsonData is parsed json object received from url
